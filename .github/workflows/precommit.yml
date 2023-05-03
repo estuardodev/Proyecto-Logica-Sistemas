@@ -1,15 +1,15 @@
-name: checksprecommits
+name: Pre-commit Checks
 
 on:
-  precommits:
+  push:
     branches: [master]
 
 jobs:
-  precommitchecks:
+  pre-commit:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Instalar precommit
+      - name: Install pre-commit
         run: pip install pre-commit
-      - name: Correr precommit checks
+      - name: Run pre-commit checks
         run: pre-commit run --all-files
