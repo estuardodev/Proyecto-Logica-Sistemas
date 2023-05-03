@@ -25,7 +25,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Crear archivo de configuración
-        run: echo '{"MD013": {"line_length": 500}}' > .markdownlint.json
+        run: echo "{\"MD013\": {\"line_length\": 500}}\" > .markdownlint.json
 
       - name: Agregar excepciones de HTML
         run: echo '{"MD033": false}' >> .markdownlint.json
