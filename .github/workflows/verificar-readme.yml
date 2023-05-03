@@ -6,7 +6,7 @@ on:
       - master # rama principal
 
 jobs:
-  verify-readme:
+  verificar-readme:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -24,8 +24,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Crear archivo de configuración
-        run: echo "{\"MD013\": {\"line_length\": 500}}\" > .markdownlint.json
+        - name: Agregar excepciones de HTML
+        run: echo '{"MD033": false}' > .markdownlint.json
 
-      - name: Agregar excepciones de HTML
-        run: echo '{"MD033": false}' >> .markdownlint.json
+      - name: Crear archivo de configuración
+        run: echo '{"MD013": {"line_length": 500}}' >> .markdownlint.json
