@@ -98,4 +98,3 @@ String URLEncodeMessage(String message) {
 	}
 	return encodedMessage ;
 }
-

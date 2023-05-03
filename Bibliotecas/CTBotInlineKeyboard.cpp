@@ -94,4 +94,3 @@ String CTBotInlineKeyboard::getJSON(void)
 
 	return serialized;
 }
-

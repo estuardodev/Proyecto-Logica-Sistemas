@@ -54,7 +54,7 @@ public:
 
   // b/c this is both a real class and a virtual parent of the secure client, make sure
   // there's a safe way to copy from the pointer without 'slicing' it; i.e. only the base
-  // portion of a derived object will be copied, and the polymorphic behavior will be corrupted. 
+  // portion of a derived object will be copied, and the polymorphic behavior will be corrupted.
   //
   // this class still implements the copy and assignment though, so this is not yet enforced
   // (but, *should* be inside the Core itself, see httpclient & server)
@@ -103,7 +103,7 @@ public:
   friend class WiFiServer;
 
   using Print::write;
-  
+
   static void stopAll();
   static void stopAllExcept(WiFiClient * c);
 

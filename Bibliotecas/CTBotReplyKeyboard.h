@@ -3,9 +3,9 @@
 #define CTBOT_REPLY_KEYBOARD
 
 // for using int_64 data
-#define ARDUINOJSON_USE_LONG_LONG 1 
+#define ARDUINOJSON_USE_LONG_LONG 1
 // for decoding UTF8/UNICODE
-#define ARDUINOJSON_DECODE_UNICODE 1 
+#define ARDUINOJSON_DECODE_UNICODE 1
 
 #if defined(ARDUINO_ARCH_ESP8266) // ESP8266
 // for strings stored in FLASH - only for ESP8266
@@ -60,19 +60,19 @@ public:
 
 	// enable reply keyboard autoresizing (default: the same size of the standard keyboard)
 	void enableResize(void);
-	
+
 	// hide the reply keyboard as soon as it's been used
 	void enableOneTime(void);
 
-	// Use this parameter if you want to show the keyboard for specific users only. 
-    // Targets: 1) users that are @mentioned in the text of the Message object; 
+	// Use this parameter if you want to show the keyboard for specific users only.
+    // Targets: 1) users that are @mentioned in the text of the Message object;
 	//          2) if the bot's message is a reply (has reply_to_message_id), sender of the original message
 	void enableSelective(void);
 
-	// generate a string that contains the inline keyboard formatted in a JSON structure. 
+	// generate a string that contains the inline keyboard formatted in a JSON structure.
 	// Useful for CTBot::sendMessage()
 	// returns:
-	//   the JSON of the inline keyboard 
+	//   the JSON of the inline keyboard
 	String getJSON(void);
 };
 

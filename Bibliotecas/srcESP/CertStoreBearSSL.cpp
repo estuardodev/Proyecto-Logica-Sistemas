@@ -78,7 +78,7 @@ CertStore::CertInfo CertStore::_preprocessCert(uint32_t length, uint32_t offset,
   return ci;
 }
 
-// The certs.ar file is a UNIX ar format file, concatenating all the 
+// The certs.ar file is a UNIX ar format file, concatenating all the
 // individual certificates into a single blob in a space-efficient way.
 int CertStore::initCertStore(fs::FS &fs, const char *indexFileName, const char *dataFileName) {
   int count = 0;

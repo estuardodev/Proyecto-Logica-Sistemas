@@ -364,7 +364,7 @@ bool ESP8266WiFiSTAClass::disconnect(bool wifioff) {
 
 /**
  * Disconnect from the network
- * @param wifioff Bool indicating whether STA should be disabled. 
+ * @param wifioff Bool indicating whether STA should be disabled.
  * @param eraseCredentials Bool indicating whether saved credentials should be erased.
  * @return  one value of wl_status_t enum
  */

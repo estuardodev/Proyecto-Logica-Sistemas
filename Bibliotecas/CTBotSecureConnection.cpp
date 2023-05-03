@@ -2,7 +2,7 @@
 #include "CTBotSecureConnection.h"
 #include "Utilities.h"
 
-#define TELEGRAM_URL  FSTR("api.telegram.org") 
+#define TELEGRAM_URL  FSTR("api.telegram.org")
 #define TELEGRAM_IP   FSTR("149.154.167.220") // "149.154.167.198" <-- Old IP
 #define TELEGRAM_PORT 443
 

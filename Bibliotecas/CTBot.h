@@ -19,7 +19,7 @@ public:
 	// default destructor
 	~CTBot();
 
-	// set a static ip. If not set, use the DHCP. 
+	// set a static ip. If not set, use the DHCP.
 	// params
 	//   ip        : the ip address
 	//   gateway   : the gateway address
@@ -77,7 +77,7 @@ public:
 	//    true if no error occurred
 	bool testConnection(void);
 
-	// get the first unread message from the queue (text and query from inline keyboard). 
+	// get the first unread message from the queue (text and query from inline keyboard).
 	// This is a destructive operation: once read, the message will be marked as read
 	// so a new getMessage will read the next message (if any).
 	// params
@@ -93,7 +93,7 @@ public:
 
 	// send a message to the specified telegram user ID
 	// params
-	//   id      : the telegram recipient user ID 
+	//   id      : the telegram recipient user ID
 	//   message : the message to send
 	//   keyboard: the inline/reply keyboard (optional)
 	//             (in json format or using the CTBotInlineKeyboard/CTBotReplyKeyboard class helper)
@@ -105,7 +105,7 @@ public:
 
 	// edits text or inline keyboard of a previous message for the specified telegram user ID
 	// params
-	//   id        : the telegram recipient user ID 
+	//   id        : the telegram recipient user ID
 	//   messageID : the ID of the message to be edited
 	//   message   : the new text
 	//   keyboard  : the inline/reply keyboard (optional)
@@ -118,7 +118,7 @@ public:
 	// terminate a query started by pressing an inlineKeyboard button. The steps are:
 	// 1) send a message with an inline keyboard
 	// 2) wait for a <message> (getNewMessage) of type CTBotMessageQuery
-	// 3) handle the query and then call endQuery with <message>.callbackQueryID 
+	// 3) handle the query and then call endQuery with <message>.callbackQueryID
 	// params
 	//   queryID  : the unique query ID (retrieved with getNewMessage method)
 	//   message  : an optional message
@@ -128,10 +128,10 @@ public:
 
 	// remove an active reply keyboard for a selected user, sending a message
 	// params:
-	//   id       : the telegram user ID 
+	//   id       : the telegram user ID
 	//   message  : the message to be show to the selected user ID
 	//   selective: enable selective mode (hide the keyboard for specific users only)
-	//              Targets: 1) users that are @mentioned in the text of the Message object; 
+	//              Targets: 1) users that are @mentioned in the text of the Message object;
 	//                       2) if the bot's message is a reply (has reply_to_message_id), sender of the original message
 	// return:
 	//   true if no error occurred
@@ -167,7 +167,7 @@ private:
 	// params
 	//   message: the UNICODE message
 	// returns
-	//   a string with the converted message in UTF8 
+	//   a string with the converted message in UTF8
 	String toUTF8(String message);
 
 	// get some information about the bot

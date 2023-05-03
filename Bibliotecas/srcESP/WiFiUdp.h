@@ -41,7 +41,7 @@ public:
 
   operator bool() const { return _ctx != 0; }
 
-  // initialize, start listening on specified port. 
+  // initialize, start listening on specified port.
   // Returns 1 if successful, 0 if there are no sockets available to use
   uint8_t begin(uint16_t port) override;
   // Finish with the UDP connection
@@ -50,7 +50,7 @@ public:
   uint8_t beginMulticast(IPAddress interfaceAddr, IPAddress multicast, uint16_t port);
 
   // Sending UDP packets
-  
+
   // Start building up a packet to send to the remote host specific in ip and port
   // Returns 1 if successful, 0 if there was a problem with the supplied IP address or port
   int beginPacket(IPAddress ip, uint16_t port) override;
@@ -64,7 +64,7 @@ public:
   // ttl              - multicast packet TTL (default is 1)
   // Returns 1 if successful, 0 if there was a problem with the supplied IP address or port
   virtual int beginPacketMulticast(IPAddress multicastAddress,
-                                   uint16_t port, 
+                                   uint16_t port,
                                    IPAddress interfaceAddress,
                                    int ttl = 1);
   // Finish off this packet and send it
@@ -74,7 +74,7 @@ public:
   size_t write(uint8_t) override;
   // Write size bytes from buffer into the packet
   size_t write(const uint8_t *buffer, size_t size) override;
-  
+
   using Print::write;
 
   // Start processing the next available incoming packet
@@ -110,4 +110,3 @@ public:
 };
 
 #endif //WIFIUDP_H
-

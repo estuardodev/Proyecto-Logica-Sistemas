@@ -12,8 +12,8 @@ public:
 	CTBotSecureConnection();
 
 	// use the URL style address "api.telegram.org" or the fixed IP address "149.154.167.198"
-	// for all communication with the telegram server. When changing to true a test 
-	// connection is made using the URL. If no connection is made useDNS falls back to false. 
+	// for all communication with the telegram server. When changing to true a test
+	// connection is made using the URL. If no connection is made useDNS falls back to false.
 	// Default value is false
 	// params
 	//   value: true  -> use URL style address

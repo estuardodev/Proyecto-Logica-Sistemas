@@ -3,9 +3,9 @@
 #define CTBOT_INLINE_KEYBOARD
 
 // for using int_64 data
-#define ARDUINOJSON_USE_LONG_LONG 1 
+#define ARDUINOJSON_USE_LONG_LONG 1
 // for decoding UTF8/UNICODE
-#define ARDUINOJSON_DECODE_UNICODE 1 
+#define ARDUINOJSON_DECODE_UNICODE 1
 
 #if defined(ARDUINO_ARCH_ESP8266) // ESP8266
 // for strings stored in FLASH - only for ESP8266
@@ -58,10 +58,10 @@ public:
 	//    true if no error occurred
 	bool addButton(const String& text, const String& command, CTBotInlineKeyboardButtonType buttonType);
 
-	// generate a string that contains the inline keyboard formatted in a JSON structure. 
+	// generate a string that contains the inline keyboard formatted in a JSON structure.
 	// Useful for CTBot::sendMessage()
 	// returns:
-	//   the JSON of the inline keyboard 
+	//   the JSON of the inline keyboard
 	String getJSON(void);
 };
 

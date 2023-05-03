@@ -39,7 +39,7 @@ public:
   TClient available() {
 
     acceptClients();
- 
+
     // find next client with data available
     for (uint8_t i = 0; i < MAX_MONITORED_CLIENTS; i++) {
       if (index == MAX_MONITORED_CLIENTS) {

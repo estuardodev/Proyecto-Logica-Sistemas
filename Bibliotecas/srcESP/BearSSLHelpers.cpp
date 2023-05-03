@@ -999,4 +999,3 @@ namespace esp8266 {
   UpdaterVerifyClass& updaterSigningVerifier = __signingVerifier;
 };
 #endif
-

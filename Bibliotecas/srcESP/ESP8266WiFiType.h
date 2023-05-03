@@ -32,7 +32,7 @@
 
 // TODO: replace/deprecate/remove enum typedefs ending with _t below
 
-typedef enum WiFiMode 
+typedef enum WiFiMode
 {
     WIFI_OFF = 0, WIFI_STA = 1, WIFI_AP = 2, WIFI_AP_STA = 3
 } WiFiMode_t;
@@ -55,7 +55,7 @@ typedef enum wifi_ps_type
     WIFI_PS_MAX_MODEM = WIFI_LIGHT_SLEEP,
 } wifi_ps_type_t;
 
-typedef enum WiFiEvent 
+typedef enum WiFiEvent
 {
     WIFI_EVENT_STAMODE_CONNECTED = 0,
     WIFI_EVENT_STAMODE_DISCONNECTED,
@@ -71,7 +71,7 @@ typedef enum WiFiEvent
     WIFI_EVENT_ANY = WIFI_EVENT_MAX,
 } WiFiEvent_t;
 
-enum WiFiDisconnectReason 
+enum WiFiDisconnectReason
 {
     WIFI_DISCONNECT_REASON_UNSPECIFIED              = 1,
     WIFI_DISCONNECT_REASON_AUTH_EXPIRE              = 2,

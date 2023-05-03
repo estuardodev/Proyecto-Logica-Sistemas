@@ -25,7 +25,7 @@ CTBotReplyKeyboard::CTBotReplyKeyboard()
 	if (!m_root)
 		serialLog("CTBotInlineKeyboard: Unable to allocate JsonDocument memory.\n", CTBOT_DEBUG_MEMORY);
 #endif
-	
+
 	initialize();
 }
 
@@ -113,4 +113,3 @@ String CTBotReplyKeyboard::getJSON(void)
 
 	return serialized;
 }
-

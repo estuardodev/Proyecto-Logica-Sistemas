@@ -74,4 +74,3 @@ class CertStore: public CertStoreBase {
 };
 
 #endif
-

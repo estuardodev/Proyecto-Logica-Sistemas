@@ -1,7 +1,7 @@
 // for using int_64 data
-#define ARDUINOJSON_USE_LONG_LONG 1 
+#define ARDUINOJSON_USE_LONG_LONG 1
 // for decoding UTF8/UNICODE
-#define ARDUINOJSON_DECODE_UNICODE 1 
+#define ARDUINOJSON_DECODE_UNICODE 1
 
 #if defined(ARDUINO_ARCH_ESP8266) // ESP8266
 // for strings stored in FLASH - only for ESP8266
@@ -80,11 +80,11 @@ String CTBot::toUTF8(String message)
 	return(converted);
 }
 
-void CTBot::enableUTF8Encoding(bool value) 
+void CTBot::enableUTF8Encoding(bool value)
 {	m_UTF8Encoding = value;}
 
 void CTBot::setStatusPin(int8_t pin)
-{	
+{
 /*
 	// if there is a valid status pin -> put it in high impedance
 	if (m_statusPin != CTBOT_DISABLE_STATUS_PIN)
@@ -556,4 +556,3 @@ void CTBot::setFingerprint(const uint8_t* newFingerprint)
 {
 	m_connection.setFingerprint(newFingerprint);
 }
-
