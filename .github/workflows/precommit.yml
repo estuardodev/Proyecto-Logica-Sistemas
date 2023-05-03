@@ -1,7 +1,7 @@
 name: checksprecommits
 
 on:
-  precommit:
+  precommits:
     branches: [master]
 
 jobs:
