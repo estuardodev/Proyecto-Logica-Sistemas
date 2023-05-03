@@ -16,3 +16,14 @@ La contribución a este proyecto está limitada a miembros de la universidad. Si
 6. Crea un nuevo Pull Request en GitHub
 
 Asegúrate de seguir las mejores prácticas de desarrollo de software y de incluir una descripción detallada de tus cambios en el Pull Request. ¡Estamos ansiosos por ver tus contribuciones!
+
+## Configuración de pre-commit
+
+Para ayudar a mantener la calidad del código, este repositorio utiliza pre-commit, una herramienta que ejecuta varios hooks antes de cada commit. Para usarlo, sigue estos pasos:
+
+1. Crea un entorno virtual de Python: `python -m venv venv`
+2. Activa el entorno virtual: `source venv/bin/activate`
+3. Instala pre-commit: `pip install pre-commit`
+4. Ejecuta pre-commit en todos los archivos: `pre-commit run --all-files`
+
+pre-commit se encarga de asegurar que se cumplan ciertas reglas de calidad de código, como por ejemplo, la longitud de línea máxima, la presencia de ciertos caracteres o la validación de formato en archivos Markdown. Si algún hook falla, pre-commit cancelará el commit y mostrará los errores encontrados. En ese caso, deberás corregir los errores antes de poder hacer el commit.
