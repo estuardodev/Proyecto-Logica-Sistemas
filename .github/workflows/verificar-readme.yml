@@ -16,16 +16,4 @@ jobs:
         run: npm install -g markdownlint-cli
 
       - name: Verificar README
-        run: markdownlint --config .markdownlint.json README.md
-
-  update-config:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-        - name: Agregar excepciones de HTML
-        run: echo '{"MD033": false}' > .markdownlint.json
-
-      - name: Crear archivo de configuración
-        run: echo '{"MD013": {"line_length": 500}}' >> .markdownlint.json
+        run: markdownlint --config .markdownlint.yml README.md
