@@ -44,3 +44,7 @@ Este proyecto no sería posible sin el uso de las siguientes herramientas y libr
 - [ESP8266 for Arduino](https://github.com/esp8266/Arduino "ESP8266") - Plataforma para el desarrollo de proyectos con microcontroladores ESP8266 y ESP32.
 - [ArduinoJSON](https://github.com/bblanchon/ArduinoJson "ArduinoJSON") - Biblioteca para la manipulación de datos en formato JSON en proyectos de Arduino.
   Agradecemos a los autores de estas herramientas y librerías por su trabajo y dedicación en la creación y mantenimiento de estas herramientas de código abierto, las cuales han sido fundamentales en el desarrollo de este proyecto.
+
+## Autores
+
+- [Estuardo Ramírez](https://github.com/estuardodev)
