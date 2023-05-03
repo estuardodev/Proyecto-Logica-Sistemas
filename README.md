@@ -6,6 +6,15 @@ Este repositorio de GitHub tiene como objetivo almacenar el código fuente del p
 <img src="./umg.png" alt="Logotipo de la Universidad Mariano Galvez de Guatemala">
 </p>
 
+<div align="center">
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Arduino](https://img.shields.io/badge/Arduino-C%2B%2B-blue.svg)](https://www.arduino.cc/reference/en/)
+[![Version](https://img.shields.io/badge/Version-1.0.0-blue)](estuardodev/Proyecto-Logica-Sistemas/blob/master/CHANGELOG.md)
+[![Contributors](https://img.shields.io/github/contributors/estuardodev/Proyecto-Logica-Sistemas)](https://github.com/estuardodev/Proyecto-Logica-Sistemas/graphs/contributors)
+
+</div>
+
 ## Información General
 
 En este proyecto se han empleado librerías externas bajo la licencia de código abierto de ArduinoJSON y CBot, siendo propiedad de sus respectivos autores. Asimismo, se ha utilizado la librería ESP8266 para Arduino con el fin de operar ciertos módulos sin alterar el código original, y se ha atribuido el crédito correspondiente en la sección correspondiente a las bibliotecas utilizadas.
@@ -48,3 +57,4 @@ Este proyecto no sería posible sin el uso de las siguientes herramientas y libr
 ## Autores
 
 - [Estuardo Ramírez](https://github.com/estuardodev)
+- Estiv Sarpec
