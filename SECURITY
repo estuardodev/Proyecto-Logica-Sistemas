@@ -1,0 +1,25 @@
+# Política de Seguridad
+
+Este documento describe la política de seguridad para el proyecto universitario.
+
+## Responsabilidades
+
+El equipo de desarrollo es responsable de asegurar la seguridad del proyecto, incluyendo la detección y corrección de vulnerabilidades. Los usuarios del proyecto también son responsables de informar cualquier problema de seguridad que encuentren.
+
+## Divulgación responsable
+
+Si encuentra una vulnerabilidad de seguridad en este proyecto, por favor infórmelo al equipo de desarrollo de manera responsable. Puede informar la vulnerabilidad enviando un correo electrónico a [contacto@estuardodev.com] y proporcionando información detallada sobre la vulnerabilidad y cómo reproducirla.
+
+El equipo de desarrollo se compromete a responder a los informes de vulnerabilidades lo antes posible y a trabajar en una solución en un plazo razonable.
+
+## Soporte a largo plazo
+
+Este proyecto universitario no ofrece soporte a largo plazo y no se realizarán correcciones de seguridad para versiones antiguas. Se recomienda a los usuarios que utilicen siempre la última versión del proyecto.
+
+## Actualizaciones de seguridad
+
+Si se descubre una vulnerabilidad de seguridad en el proyecto, se lanzará una actualización lo antes posible para corregir el problema. Se recomienda a los usuarios que actualicen a la última versión del proyecto tan pronto como sea posible.
+
+## Información adicional
+
+Para obtener más información sobre la seguridad de este proyecto universitario, puede ponerse en contacto con el equipo de desarrollo a través del correo electrónico [contacto@estuardodev.com].
