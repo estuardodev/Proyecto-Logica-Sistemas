@@ -1,11 +1,11 @@
-name: Precommit checks
+name: checksprecommits
 
 on:
   precommit:
     branches: [master]
 
 jobs:
-  precommit:
+  precommitchecks:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
