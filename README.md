@@ -10,7 +10,7 @@ Este repositorio de GitHub tiene como objetivo almacenar el código fuente del p
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Arduino](https://img.shields.io/badge/Arduino-C%2B%2B-blue.svg)](https://www.arduino.cc/reference/en/)
-[![Version](https://img.shields.io/badge/Version-1.0.0-blue)](estuardodev/Proyecto-Logica-Sistemas/blob/master/CHANGELOG.md)
+[![Version](https://img.shields.io/badge/Version-1.0.0-blue)](CHANGELOG.md)
 [![Contributors](https://img.shields.io/github/contributors/estuardodev/Proyecto-Logica-Sistemas)](https://github.com/estuardodev/Proyecto-Logica-Sistemas/graphs/contributors)
 
 </div>
