@@ -57,4 +57,5 @@ Este proyecto no sería posible sin el uso de las siguientes herramientas y libr
 ## Autores
 
 - [Estuardo Ramírez](https://github.com/estuardodev)
+- [Alicia Sazo](https://github.com/AliciaSazo)
 - Estiv Sarpec
