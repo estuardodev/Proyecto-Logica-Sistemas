@@ -59,5 +59,3 @@ Este proyecto no sería posible sin el uso de las siguientes herramientas y libr
 - <a href="https://github.com/estuardodev" target="_blank">Estuardo Ramírez</a>
 - <a href="https://github.com/AliciaSazo" target="_blank">Alicia Sazo</a>
 - Estiv Sarpec
-
-- Estiv Sarpec
