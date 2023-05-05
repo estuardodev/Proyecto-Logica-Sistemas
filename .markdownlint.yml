@@ -2,4 +2,4 @@ MD013:
   line_length: 500
 
 MD033:
-  allowed_elements: ["br", "img", "hr", "p", "align", "div"]
+  allowed_elements: ["br", "img", "hr", "p", "align", "div", "a"]
