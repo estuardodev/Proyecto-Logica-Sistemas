@@ -41,6 +41,8 @@ void loop() {
     // Leer la señal analógica del sensor de humo
     int humo = analogRead(pinHumo);
 
+    TBMessage msg;
+
     // Si se detecta humo, enviar un mensaje de Telegram
     if (humo > umbralHumo) {
         String mensaje = "Se ha detectado humo!";
