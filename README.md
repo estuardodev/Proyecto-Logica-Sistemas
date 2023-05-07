@@ -1,6 +1,6 @@
 # Proyecto Universitario
 
-Este repositorio de GitHub tiene como objetivo almacenar el código fuente del proyecto de domótica que utiliza la plataforma Arduino, el cual se desarrolla en el marco de un proyecto universitario.
+Este repositorio de GitHub tiene como objetivo contener el proyecto de domótica que utiliza la plataforma Arduino, el cual se desarrolla en el marco de un proyecto universitario.
 
 <p align="center">
 <img src="./umg.png" alt="Logotipo de la Universidad Mariano Galvez de Guatemala">
