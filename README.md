@@ -15,7 +15,9 @@
 
 ## Información General
 
-Este repositorio de GitHub tiene como objetivo contener el proyecto de domótica que utiliza la plataforma Arduino, el cual se desarrolla en el marco de un proyecto universitario. Se han empleado librerías externas bajo la licencia de código abierto de ArduinoJSON y CBot, siendo propiedad de sus respectivos autores. Asimismo, se ha utilizado la librería ESP8266 para Arduino con el fin de operar ciertos módulos sin alterar el código original, y se ha atribuido el crédito en la sección correspondiente a las bibliotecas utilizadas.
+Este repositorio de GitHub tiene como objetivo contener el proyecto de domótica que utiliza la plataforma Arduino, el cual se desarrolla en el marco de un proyecto universitario.
+
+Se han empleado librerías externas bajo la licencia de código abierto de ArduinoJSON y CBot, siendo propiedad de sus respectivos autores. Asimismo, se ha utilizado la librería ESP8266 para Arduino con el fin de operar ciertos módulos sin alterar el código original, y se ha atribuido el crédito en la sección correspondiente a las bibliotecas utilizadas.
 
 ## Proyecto
 
