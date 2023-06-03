@@ -1,54 +1,58 @@
-/*
-Proyecto Universitario
-En este proyecto se han empleado librerías externas bajo la licencia de código abierto de ArduinoJSON y CBot, siendo propiedad de sus respectivos autores. Asimismo, se ha utilizado la librería ESP8266 para Arduino con el fin de operar ciertos módulos sin alterar el código original, y se ha atribuido el crédito correspondiente en la sección correspondiente a las bibliotecas utilizadas en el README.
-*/
+//definimos el pin 10 como el pin E1 del integrado L293D
+#define E1 10 
+//definimos el pin8  como el pin I1 del integrado L293D
+#define I1 8 
+// declaramo el pin A0 para el sensor
+int sensor_gas= A0;
+// declaramos la variable result como un entero y la iniciamos como 0
+int result=0;
+// declaramos ld que es del pin 3
+int ld=3;
 
-// Importación de Bibliotecas
-#include "./Bibliotecas/CTBot.h"
-#include "./Bibliotecas/Utilities.h"
-#include "config.h" // En esta biblioteca debe de ir tu Token con la siguiente sintaxis: const char* TELEGRAM_BOT_TOKEN = "TU_TOKEN";
-
-// Variables Principales
-String ssid  = "SSID"; // REMPLAZAR LA VARIABLE ssid CON EL SSID DE TU RED WIFI
-String pass  = "Password"; // REMPLAZAR LA VARIABLE pass CON LA CONTRASEÑA DE TU RED WIFI
-String token = TELEGRAM_BOT_TOKEN; // REMPLAZAR LA VARIABLE token CON EL TOKEN DE TU BOT DE TELEGRAM
-
-int pinHumo = A0; // Define el pin analógico al que está conectado el sensor de humo
-int umbralHumo = 500; // Define el umbral para la detección de humo
-
-// Inicializamos CBot
-CTBot myBot;
-
-void setup() {
-    // Inicializar el puerto Serial
-    Serial.begin(115200);
-    Serial.println("Iniciando TelegramBot...");
-
-    // Conectar el ESP8266 al punto de acceso deseado
-    myBot.wifiConnect(ssid, pass);
-
-    // Establecer el token del bot de Telegram
-    myBot.setTelegramToken(token);
-
-    // Comprobar si todo está bien
-    if (myBot.testConnection())
-    Serial.println("\nConexión Exitosa");
-    else
-    Serial.println("\nConexión No Exitosa");
+//funcion de iniciacion del codigo
+void setup()
+{
+  // iniciamos un for para activar los pines del integrado L293D
+    for (int i = 8 ; i<11 ; i++) 
+     //configuramos el modo de trabajo como entrada en i
+        pinMode( i, OUTPUT);
+//configuramos el modo de trabajo como entrada en ld
+  pinMode(ld, OUTPUT);
+  Serial.begin(9600);
 }
-
-void loop() {
-    // Leer la señal analógica del sensor de humo
-    int humo = analogRead(pinHumo);
-
-    TBMessage msg;
-
-    // Si se detecta humo, enviar un mensaje de Telegram
-    if (humo > umbralHumo) {
-        String mensaje = "Se ha detectado humo!";
-        myBot.sendMessage(msg.sender.id, mensaje);
+//funcion principal de entrada
+void loop()
+{
+//declaramos la variable result para poder leer los valores de entrada del modulo de gas mq2
+ result=analogRead(sensor_gas);
+ //la variable result como decimales 
+ Serial.println(result, DEC);
+//if para comparar lo leido de la variables result y poder saber la existencia de humo 
+  if(result>300){
+    //establecemos el valor HIGH en ld
+    digitalWrite(ld,HIGH); 
+    //retardo de 10ms
+    delay(10);  
+    //establecemos el valor HIGH en E1 
+     digitalWrite(E1, HIGH);   
+      //establecemos el valor HIGH en I1 
+        digitalWrite(I1, HIGH); 
+        //retardo de ms
+        delay(3000);
+      
+    
+  }
+  //si no se lee lecturas de humo se hara esto
+  else {
+    //establecemos el valor LOW en ld
+    digitalWrite(ld,LOW);
+    //retardo de 10ms
+     delay(10); 
+    //establecemos el valor lOW en E1  
+      digitalWrite(E1, LOW);  
+      //establecemos el valor LOW en I1 
+        digitalWrite(I1, LOW);  
+         //retardo de 10ms
+        delay(10);
     }
-
-    // Esperar un tiempo antes de volver a leer el sensor
-     delay(1000);
 }
